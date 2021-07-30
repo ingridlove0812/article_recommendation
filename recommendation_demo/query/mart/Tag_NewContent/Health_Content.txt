@@ -1,0 +1,2 @@
+SELECT articles_id as article_id, tag, title as content, DATE(publish) as date FROM health_articles
+WHERE categories_main != 37 AND DATE(created_time) >= CURRENT_DATE() - INTERVAL {filt} DAY AND articles_status = 1;
