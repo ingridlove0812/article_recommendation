@@ -1,1 +1,0 @@
-SELECT news_id,news_title,news_tag,news_content FROM tvbs_news_v4.news_v4 WHERE DATE(news_published_date) >= CURRENT_DATE() - INTERVAL 60 DAY AND news_status = 1;
